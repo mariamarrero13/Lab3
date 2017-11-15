@@ -29,8 +29,20 @@ public class MyPanelClass extends JPanel {
                         g.setColor(Color.ORANGE);
                         g.drawRect(x1, y1, width, height);
                         
-                      //Draw a second border
+                        //Draw a second border
                         g.setColor(Color.DARK_GRAY);
                         g.drawRect(x1+5, y1+5, width-10, height-10);
+                        
+                        //Draw Lines
+                        g.setColor(Color.WHITE);
+                        g.drawLine(x1, y1, x2, y2);
+                        g.setColor(Color.GREEN);
+                        g.drawLine(x1+width, y1, x2-width, y2);
+                        
+                        //Draw Oval
+                        g.setColor(Color.PINK);
+                        g.fillOval(x2/2-28, y2/2-28, 55, 55);
+                        
+
             }
 }
